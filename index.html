@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiuJun's Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 添加EmailJS库 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="neon-text">LiuJun</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">AboutMe</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">ContactMe</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Hi,I'm LiuJun">Hi,I'm LiuJun</h1>
+                <p class="typing-text"></p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View my projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/iliujunn" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 修正重复的section ID和animate-on-scroll类的添加方式 -->
+    <section id="about" class="about animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="img-container">
+                        <img src="./assets/image.png" alt="刘俊的照片">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Developer & Open Source Enthusiast</h3>
+                    <p>Hi, I'm Liu Jun, a passionate developer. I am dedicated to creating applications and websites that solve practical problems.</p>
+                    <p>My goal is to bring pleasant user experiences through technology, while constantly learning and growing in the process.</p>
+                    <p>I'm actively involved in <strong>open source development</strong>, contributing to projects like CANDY-Benchmark, SAGE, and BigANN. I believe in the power of collaborative development and knowledge sharing to advance technology.</p>
+                    <a href="#" class="btn primary-btn">Download the resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">My projects</h2>
+            <div class="projects-grid">
+                <!-- 项目卡片内容保持不变 -->
+                <div class="project-card">
+                    <!-- <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="CandyBench">
+                    </div> -->
+                    <div class="project-content">
+                
+                        <h3><i class="fab fa-github" style="margin-right: 10px; font-size: 1.2em;"></i>CandyBenchmark</h3>
+                        <p>A benchmark which inherits multiple ANNS algorithms and extensive evaluation metrics</p>
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>ANNS</span>
+                            <span>Collaborator</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/intellistream/CANDY-Benchmark" target="_blank"><i class="fab fa-github"></i>source code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <!-- <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="项目2">
+                    </div> -->
+                    <div class="project-content">
+                        <h3><i class="fab fa-github" style="margin-right: 10px; font-size: 1.2em;"></i>SAGE</h3>
+                        <p>A comprehensive RAG system that allows user to customize the pipeline with a high degree of freedom</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>RAG</span>
+                            <span>Collaborator</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> 查看演示</a> -->
+                            <a href="https://github.com/intellistream/SAGE" target="_blank"><i class="fab fa-github"></i> source code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <!-- <div class="project-img" style="background-color: #f5f5f5;">
+                        <img src="https://via.placeholder.com/600x400" alt="BigANN Benchmark">
+                    </div> -->
+                    <div class="project-content">
+                        <h3><i class="fab fa-github" style="margin-right: 10px; font-size: 1.2em;"></i>BigANN Benchmark</h3>
+                        <p>An ANNS Benchmark of multiple tracks:streaming , filter , ood , sparse</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Benchmark</span>
+                            <span>Forker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/intellistream/big-ann-benchmarks" target="_blank"><i class="fab fa-github"></i> source code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-end development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>Angular</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Back-end development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <h4>Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <h4>API Design</h4>
+                            <div class="skill-progress">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>iliujun@msn.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Wuhan,China</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telephone</h3>
+                            <p>+1 (385) 243 0197</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="YourName" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="YourEmailAddress" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Theme">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">send</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                    <div class="alternative-contact">
+                        <p>Or submit feedback directly on GitHub:</p>
+                        <a href="https://github.com/iliujunn/iliujunn.github.io/issues/new?title=网站反馈&body=姓名：%0A邮箱：%0A%0A消息：" target="_blank" class="btn secondary-btn github-issue-btn">
+                            <i class="fab fa-github"></i> Submit Feedback
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 LiuJun.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+    <!-- 在body标签开始后添加以下代码 -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+    
+    <!-- 在header的nav中添加主题切换按钮 -->
+    <div class="theme-toggle">
+        <i class="fas fa-sun"></i>
+    </div>
+    
+    <!-- 在footer之前添加滚动到顶部按钮 -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- 在body结束标签前添加 -->
+    <script src="js/contact.js"></script>
+    </body>
+    </html>
