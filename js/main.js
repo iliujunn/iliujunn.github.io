@@ -109,11 +109,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 打字效果
     const options = {
-        strings: ['badminton 🏸 | long-distance 🏃‍♂️', 'Hust-intern', '@IntelliStream', 'Beyond | 单依纯', 'keep learning'],
+        strings: ['badminton &#x1F3F8; | long-distance &#x1F3C3;', 'Hust-intern', '@IntelliStream', 'Beyond | 单依纯', 'keep learning'],
+        // strings: ['badminton 🏸 | long-distance 🏃', 'Hust-intern', '@IntelliStream', 'Beyond | 单依纯', 'keep learning'],
         typeSpeed: 50,
-        backSpeed: 30,
+        backSpeed: 40,
         backDelay: 2000,
-        loop: true
+        loop: true,
+        contentType: 'html'
     };
     
     const typed = new Typed('.typing-text', options);
